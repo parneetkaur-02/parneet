@@ -1,0 +1,180 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #6a0dad; /* Purple background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container */
+.container {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    width: 380px;
+    text-align: center;
+    margin-top: 60px; /* Moves container down */
+}
+/* Start Button Container */
+.start-button {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Start Button Styling */
+.start-btn {
+    font-size: 18px;
+    padding: 12px 25px;
+    border: none;
+    background: white;
+    color: black;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.2);
+}
+
+/* Hover Effect */
+.start-btn:hover {
+    background: #ffcc00;
+    color: black;
+    transform: scale(1.1);
+    box-shadow: 0px 6px 10px rgba(255, 204, 0, 0.5);
+}
+
+/* Active (Click) Effect */
+.start-btn:active {
+    transform: scale(0.95);
+    box-shadow: 0px 3px 5px rgba(255, 204, 0, 0.3);
+}
+
+
+/* Search Bar */
+.search-card {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-top: 40px; /* Adjusted for better positioning */
+}
+
+.search-card input {
+    width: 70%;
+    padding: 10px;
+    border: 2px solid #a96ff3;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.search-card input:focus {
+    border-color: #ffb703;
+    box-shadow: 0px 0px 8px #ffb703;
+}
+
+.search-card button {
+    width: 25%;
+    padding: 10px;
+    background: #ffb703;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.search-card button:hover {
+    background: #ff9800;
+}
+
+/* Forecast Card */
+.forecast-card {
+    background: #b69cff;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+    color: #fff;
+}
+
+.forecast h2 {
+    margin-bottom: 10px;
+}
+
+.forecast {
+    display: flex;
+    justify-content: space-around;
+}
+
+.forecast-box {
+    text-align: center;
+    background: #a874e8;
+    padding: 10px;
+    border-radius: 8px;
+    width: 90px;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.forecast-box i {
+    font-size: 24px;
+    margin-bottom: 5px;
+    color: #ffea00;
+}
+
+.forecast-box:hover {
+    transform: scale(1.1);
+    background: #8b4de3;
+}
+
+/* Weather Details Card */
+.weather-card {
+    background: #f5e1ff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.weather-card h2 {
+    color: #5c0067;
+}
+
+/* Weather Info Box */
+.info-box {
+    display: flex;
+    align-items: center;
+    background: #d9b3ff;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #30034a;
+    font-weight: 500;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    margin-bottom: 10px;
+}
+
+.info-box:hover {
+    background: #c799ff;
+    transform: scale(1.05);
+}
+
+.info-box i {
+    color: #ff9800;
+    font-size: 20px;
+    margin-right: 12px;
+}
+
+.info-box p {
+    margin: 0;
+}

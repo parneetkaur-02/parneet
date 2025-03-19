@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Search</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Search Bar -->
+        <div class="search-card">
+            <input type="text" id="city-input" placeholder="Enter city name">
+            <button onclick="getWeather()">Search</button>
+        </div>
+
+        <!-- Forecast Section -->
+        <div class="forecast-card">
+            <h2>Forecast</h2>
+            <div class="forecast">
+                <div class="forecast-box">
+                    <i class="fas fa-sun"></i>
+                    <p>Morning</p>
+                    <h3 id="morning-temp">--°</h3>
+                    <span id="morning-condition">--</span>
+                </div>
+                <div class="forecast-box">
+                    <i class="fas fa-cloud-sun"></i>
+                    <p>Afternoon</p>
+                    <h3 id="afternoon-temp">--°</h3>
+                    <span id="afternoon-condition">--</span>
+                </div>
+                <div class="forecast-box">
+                    <i class="fas fa-moon"></i>
+                    <p>Evening</p>
+                    <h3 id="evening-temp">--°</h3>
+                    <span id="evening-condition">--</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Weather Details Section -->
+        <div class="weather-card">
+            <h2>Weather Details</h2>
+            <div class="weather-info">
+                <div class="info-box">
+                    <i class="fas fa-temperature-high"></i>
+                    <p>Temperature: <span id="temperature">--°C</span></p>
+                </div>
+                <div class="info-box">
+                    <i class="fas fa-tint"></i>
+                    <p>Humidity: <span id="humidity">--%</span></p>
+                </div>
+                <div class="info-box">
+                    <i class="fas fa-wind"></i>
+                    <p>Wind Speed: <span id="wind">-- km/h</span></p>
+                </div>
+                <div class="info-box">
+                    <i class="fas fa-cloud"></i>
+                    <p>Condition: <span id="condition">--</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
